@@ -43,7 +43,7 @@ void setup() {
 void loop() {
   uint8_t i;
   
-  Serial.print("tick");
+  Serial.print("open");
 
   mouthMotor->run(FORWARD);
   for (i=0; i<255; i++) {
@@ -55,7 +55,7 @@ void loop() {
     delay(10);
   }
   
-  Serial.print("tock");
+  Serial.print("close");
 
   mouthMotor->run(BACKWARD);
   for (i=0; i<255; i++) {
